@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sebs.Toolkit.FileSystems", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sebs.Toolkit.RandomProvider", "Sebs.Toolkit.RandomProvider\Sebs.Toolkit.RandomProvider.csproj", "{9E6762CB-92B3-483A-8E0D-160471017253}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sebs.Toolkit.Signalr", "Sebs.Toolkit.Signalr\Sebs.Toolkit.Signalr.csproj", "{AEA10125-46ED-44FD-8B34-5FCD579A4763}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{9E6762CB-92B3-483A-8E0D-160471017253}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E6762CB-92B3-483A-8E0D-160471017253}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9E6762CB-92B3-483A-8E0D-160471017253}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEA10125-46ED-44FD-8B34-5FCD579A4763}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEA10125-46ED-44FD-8B34-5FCD579A4763}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEA10125-46ED-44FD-8B34-5FCD579A4763}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEA10125-46ED-44FD-8B34-5FCD579A4763}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
