@@ -5,6 +5,9 @@ using System.Diagnostics;
 
 namespace Sebs.Toolkit.Serilog
 {
+    /// <summary>
+    /// Usage: Log.Logger = SerilogManager.Config("Config//SerilogConfig.json");
+    /// </summary>
     public class SerilogSingletonService
     {
         private static SerilogSingletonService? _instance;
