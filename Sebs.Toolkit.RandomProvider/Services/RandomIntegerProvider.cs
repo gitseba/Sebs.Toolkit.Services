@@ -31,5 +31,17 @@ namespace Sebs.Toolkit.RandomProvider.Services
                 yield return _generator.Next(_maxCount);
             }
         }
+
+        /// Return a random float between 0.0 (inclusive) and 1.0 (exclusive.)
+        public float NextRandom() { return (float)_generator.NextDouble(); }
+
+        /// Return a random float between 0.0 and range, inclusive from both ends.
+        public float NextRandom(float range) { return (float)_generator.NextDouble() * range; }
+
+        /// Return a random float between min and max, inclusive from both ends.
+        public float NextRandom(float min, float max) { return (float)((_generator.NextDouble() * (max - min)) + min); }
+
+        /// Return a random integer between min and max - 1.
+        public int NextRandom(int min, int max) { return _generator.Next(min, max); }
     }
 }
