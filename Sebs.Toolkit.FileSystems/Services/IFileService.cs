@@ -1,4 +1,6 @@
-﻿namespace Sebs.FileSystems.Services
+﻿using Sebs.Toolkit.FileSystems.Models;
+
+namespace Sebs.FileSystems.Services
 {
     /// <summary>
     /// Purpose: Interface for fetching files from PC System
@@ -8,6 +10,14 @@
     public interface IFileService
     {
         IAsyncEnumerable<string> GetItemsAsync(string path, string patterns, CancellationToken cancellationToken = default);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="fullPath">Path where to search for files</param>
+        /// <param name="extension"> = ".cs" </param>
+        /// <returns></returns>
+        Task<IReadOnlyList<DriveModel>> GetFilesAsync(string fullPath, string extension);
     }
 }
 
